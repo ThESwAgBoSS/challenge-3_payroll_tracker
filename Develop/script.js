@@ -39,14 +39,20 @@ const displayAverageSalary = function(employeesArray) {
     totalSalary += parseFloat(employee.salary.replace(`$`, ``));
   }
 
-  const averageSaary = totalSalary / employeesArray.length;
+  const averageSalary = totalSalary / employeesArray.length;
 
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+const randomIndex = Math.floor(Math.random() * employeesArray.length);
+
+const randomEmployee = employeesArray[randomIndex];
+
+console.log(`Random Employee:`, randomEmployee.firstName, randomEmployees.lastName, randomEmployee.salary);
 }
+
 
 /*
   ====================
